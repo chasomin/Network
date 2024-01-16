@@ -25,22 +25,51 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nz6-KE-yZV">
-                                <rect key="frame" x="50" y="239" width="293" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zsv-d6-d0Q">
+                                <rect key="frame" x="20" y="238.99999999999997" width="353" height="54.666666666666657"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JTk-e4-itt">
+                                        <rect key="frame" x="0.0" y="0.99999999999999645" width="54.666666666666664" height="53.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="JTk-e4-itt" secondAttribute="height" id="rtI-Ez-O02"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IGF-up-qqD">
+                                        <rect key="frame" x="59.666666666666671" y="0.99999999999999645" width="54.666666666666671" height="53.333333333333329"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4TG-zV-584">
+                                        <rect key="frame" x="119.33333333333336" y="0.99999999999999645" width="54.666666666666671" height="53.333333333333329"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="AnG-PZ-4oQ">
+                                        <rect key="frame" x="179" y="0.99999999999999645" width="54.666666666666657" height="53.333333333333329"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YQL-qn-Lc1">
+                                        <rect key="frame" x="238.66666666666666" y="0.99999999999999645" width="54.666666666666657" height="53.333333333333329"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DoF-mu-MKa">
+                                        <rect key="frame" x="298.33333333333331" y="0.99999999999999645" width="54.666666666666686" height="53.333333333333329"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ade-cm-gdP">
+                                <rect key="frame" x="169.33333333333334" y="314.66666666666669" width="54.666666666666657" height="53.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ade-cm-gdP" secondAttribute="height" id="TJh-22-IlJ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nz6-KE-yZV" secondAttribute="trailing" constant="50" id="304-rf-xQv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zsv-d6-d0Q" secondAttribute="trailing" constant="20" id="EIy-MY-tlf"/>
                             <constraint firstItem="cyA-a2-R1p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="TKT-9R-bca"/>
                             <constraint firstItem="cyA-a2-R1p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edx-IC-jaP"/>
-                            <constraint firstItem="nz6-KE-yZV" firstAttribute="top" secondItem="cyA-a2-R1p" secondAttribute="bottom" constant="50" id="gf7-Pg-ecb"/>
-                            <constraint firstItem="nz6-KE-yZV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hUX-Ot-VZK"/>
+                            <constraint firstItem="Ade-cm-gdP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g6G-E6-hLT"/>
+                            <constraint firstItem="zsv-d6-d0Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iyx-9F-1Tx"/>
+                            <constraint firstItem="zsv-d6-d0Q" firstAttribute="top" secondItem="cyA-a2-R1p" secondAttribute="bottom" constant="50" id="lkZ-rA-2gL"/>
+                            <constraint firstItem="Ade-cm-gdP" firstAttribute="width" secondItem="JTk-e4-itt" secondAttribute="width" id="nyD-nt-udD"/>
+                            <constraint firstItem="Ade-cm-gdP" firstAttribute="top" secondItem="zsv-d6-d0Q" secondAttribute="bottom" constant="20" id="wrq-hO-pSe"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="g9c-Ju-rvn" appends="YES" id="paI-HX-IsJ"/>
@@ -48,8 +77,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Lotto" image="07.circle.fill" catalog="system" id="nSt-dG-SqQ"/>
                     <connections>
-                        <outlet property="numLabel" destination="nz6-KE-yZV" id="fAM-8t-vvT"/>
                         <outlet property="textField" destination="cyA-a2-R1p" id="9VR-ub-NbO"/>
+                        <outletCollection property="numImageView" destination="JTk-e4-itt" collectionClass="NSMutableArray" id="8hv-it-Kkc"/>
+                        <outletCollection property="numImageView" destination="IGF-up-qqD" collectionClass="NSMutableArray" id="UcF-ys-kyO"/>
+                        <outletCollection property="numImageView" destination="4TG-zV-584" collectionClass="NSMutableArray" id="jzo-2C-qwC"/>
+                        <outletCollection property="numImageView" destination="AnG-PZ-4oQ" collectionClass="NSMutableArray" id="zOi-mw-wby"/>
+                        <outletCollection property="numImageView" destination="YQL-qn-Lc1" collectionClass="NSMutableArray" id="kzh-AK-pLr"/>
+                        <outletCollection property="numImageView" destination="DoF-mu-MKa" collectionClass="NSMutableArray" id="pwN-Ti-X89"/>
+                        <outletCollection property="numImageView" destination="Ade-cm-gdP" collectionClass="NSMutableArray" id="a0S-tn-21J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -111,6 +146,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="0.circle.fill" catalog="system" width="128" height="123"/>
         <image name="07.circle.fill" catalog="system" width="128" height="123"/>
         <image name="mug" catalog="system" width="128" height="125"/>
         <image name="mug.fill" catalog="system" width="128" height="125"/>

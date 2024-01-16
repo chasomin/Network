@@ -26,8 +26,6 @@ class BeerListViewController: UIViewController {
         
         manager.callRequestList { list in
             self.list = list
-//            self.tableView.reloadData()
-
         }
 
     }

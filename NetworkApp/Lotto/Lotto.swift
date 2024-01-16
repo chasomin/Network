@@ -18,7 +18,7 @@ struct Lotto: Codable {
     let drwtNo6: Int
     let bnusNo: Int
     
-    var num: String {
-        return "\(drwtNo1)  \(drwtNo2)  \(drwtNo3)  \(drwtNo4)  \(drwtNo5)  \(drwtNo6)  \(bnusNo)"
-    }
+//    var num: String {
+//        return "\(drwtNo1)  \(drwtNo2)  \(drwtNo3) \(drwtNo4) \(drwtNo5) \(drwtNo6) \(bnusNo)"
+//    }
 }
