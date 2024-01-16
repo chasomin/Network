@@ -13,6 +13,7 @@ struct Beer: Codable {
     let description: String?
     let abv: Double?
     let food_pairing: [String]?
+    let tagline: String
     
     var alc: String {
         return "Alc.\(abv ?? 0)%"

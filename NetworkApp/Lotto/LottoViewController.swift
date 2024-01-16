@@ -24,6 +24,11 @@ class LottoViewController: UIViewController {
         setPickerView()
     }
     
+    
+    @IBAction func pickerViewDismiss(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
     func setUI() {
         textField.text = "1102회차"
         textField.inputView = lottoPickerView

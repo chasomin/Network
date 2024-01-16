@@ -26,6 +26,21 @@ struct BeerAPIManager {
             }
         }
     }
+    
+    func callRequestList(completionHandler: @escaping ([Beer]) -> Void) {
+        let url = "https://api.punkapi.com/v2/beers"
+        AF.request(url, method: .get).responseDecodable(of: [Beer].self) { response in
+            switch response.result {
+            case .success(let success):
+                completionHandler(success)
+                print(success)
+            case .failure(let failure):
+                print("오류")
+                print(failure)
+            }
+        }
+    }
+
 }
 
 

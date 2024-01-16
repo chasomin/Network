@@ -34,6 +34,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nz6-KE-yZV" secondAttribute="trailing" constant="50" id="304-rf-xQv"/>
                             <constraint firstItem="cyA-a2-R1p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="TKT-9R-bca"/>
@@ -41,6 +42,9 @@
                             <constraint firstItem="nz6-KE-yZV" firstAttribute="top" secondItem="cyA-a2-R1p" secondAttribute="bottom" constant="50" id="gf7-Pg-ecb"/>
                             <constraint firstItem="nz6-KE-yZV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hUX-Ot-VZK"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="g9c-Ju-rvn" appends="YES" id="paI-HX-IsJ"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Lotto" image="07.circle.fill" catalog="system" id="nSt-dG-SqQ"/>
                     <connections>
@@ -49,6 +53,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="g9c-Ju-rvn">
+                    <connections>
+                        <action selector="pickerViewDismiss:" destination="BYZ-38-t0r" id="RYk-gz-G7y"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1066.4122137404579" y="4.9295774647887329"/>
         </scene>
