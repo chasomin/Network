@@ -8,7 +8,6 @@
 import UIKit
 
 class BeerTableViewCell: UITableViewCell {
-    static var id = "BeerTableViewCell"
     let manager = BeerAPIManager()
 
     @IBOutlet var beerImageView: UIImageView!

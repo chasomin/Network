@@ -119,6 +119,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ADL-eJ-0zp"/>
                         <segue destination="Vpu-ZM-wS1" kind="relationship" relationship="viewControllers" id="edG-5O-1Ni"/>
+                        <segue destination="Hfb-iu-Rcf" kind="relationship" relationship="viewControllers" id="GHu-bV-ZNR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wvo-ak-3AG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -144,10 +145,40 @@
             </objects>
             <point key="canvasLocation" x="1066" y="672"/>
         </scene>
+        <!--Translate-->
+        <scene sceneID="TMH-p6-OUe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Translate" id="LNl-sF-APq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oNF-Qr-0jy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2FN-yV-17O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976.3358778625955" y="1153.5211267605634"/>
+        </scene>
+        <!--번역-->
+        <scene sceneID="R24-gG-EXi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hfb-iu-Rcf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="번역" image="arrow.left.arrow.right" catalog="system" id="HdO-9z-r4t"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y0T-dj-P34">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LNl-sF-APq" kind="relationship" relationship="rootViewController" id="HTZ-V5-xrA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uyI-83-67Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="1402"/>
+        </scene>
     </scenes>
     <resources>
         <image name="0.circle.fill" catalog="system" width="128" height="123"/>
         <image name="07.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="arrow.left.arrow.right" catalog="system" width="120" height="128"/>
         <image name="mug" catalog="system" width="128" height="125"/>
         <image name="mug.fill" catalog="system" width="128" height="125"/>
         <systemColor name="systemBackgroundColor">

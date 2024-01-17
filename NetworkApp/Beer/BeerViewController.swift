@@ -9,7 +9,6 @@ import UIKit
 import Kingfisher
 
 class BeerViewController: UIViewController {
-    static var id = "BeerViewController"
 
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var imageView: UIImageView!

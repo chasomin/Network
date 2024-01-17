@@ -26,6 +26,12 @@
 		79892BB52B56848900904F52 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BB32B56848900904F52 /* BeerTableViewCell.swift */; };
 		79892BB62B56848900904F52 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79892BB42B56848900904F52 /* BeerTableViewCell.xib */; };
 		79892BBF2B57C89A00904F52 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 79892BBE2B57C89A00904F52 /* .gitignore */; };
+		79892BC12B57C8E900904F52 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BC02B57C8E900904F52 /* APIKey.swift */; };
+		79892BC52B57CA1F00904F52 /* Translate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79892BC42B57CA1F00904F52 /* Translate.storyboard */; };
+		79892BC72B57CA4100904F52 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BC62B57CA4100904F52 /* TranslateViewController.swift */; };
+		79892BCA2B57CAA700904F52 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BC92B57CAA700904F52 /* Identifier.swift */; };
+		79892BCC2B57CDD400904F52 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BCB2B57CDD400904F52 /* LanguageViewController.swift */; };
+		79892BCE2B57D8FC00904F52 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BCD2B57D8FC00904F52 /* LanguageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,12 @@
 		79892BB32B56848900904F52 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		79892BB42B56848900904F52 /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
 		79892BBE2B57C89A00904F52 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		79892BC02B57C8E900904F52 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		79892BC42B57CA1F00904F52 /* Translate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Translate.storyboard; sourceTree = "<group>"; };
+		79892BC62B57CA4100904F52 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		79892BC92B57CAA700904F52 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		79892BCB2B57CDD400904F52 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		79892BCD2B57D8FC00904F52 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,15 +95,19 @@
 		79892B862B5663F800904F52 /* NetworkApp */ = {
 			isa = PBXGroup;
 			children = (
+				79892BC82B57CA8600904F52 /* Extension */,
 				79892B872B5663F800904F52 /* AppDelegate.swift */,
 				79892B892B5663F800904F52 /* SceneDelegate.swift */,
 				79892B8B2B5663F800904F52 /* ViewController.swift */,
 				79892B8D2B5663F800904F52 /* Main.storyboard */,
 				79892BA52B566C9600904F52 /* Lotto */,
 				79892BA42B566C8D00904F52 /* Beer */,
+				79892BC22B57C96700904F52 /* translate */,
+				79892BC32B57C9FC00904F52 /* Book */,
 				79892B902B5663FA00904F52 /* Assets.xcassets */,
 				79892B922B5663FA00904F52 /* LaunchScreen.storyboard */,
 				79892B952B5663FA00904F52 /* Info.plist */,
+				79892BC02B57C8E900904F52 /* APIKey.swift */,
 			);
 			path = NetworkApp;
 			sourceTree = "<group>";
@@ -118,6 +134,32 @@
 				79892B9B2B5665F400904F52 /* LottoViewController.swift */,
 			);
 			path = Lotto;
+			sourceTree = "<group>";
+		};
+		79892BC22B57C96700904F52 /* translate */ = {
+			isa = PBXGroup;
+			children = (
+				79892BC42B57CA1F00904F52 /* Translate.storyboard */,
+				79892BC62B57CA4100904F52 /* TranslateViewController.swift */,
+				79892BCB2B57CDD400904F52 /* LanguageViewController.swift */,
+				79892BCD2B57D8FC00904F52 /* LanguageTableViewCell.swift */,
+			);
+			path = translate;
+			sourceTree = "<group>";
+		};
+		79892BC32B57C9FC00904F52 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		79892BC82B57CA8600904F52 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79892BC92B57CAA700904F52 /* Identifier.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79892BC52B57CA1F00904F52 /* Translate.storyboard in Resources */,
 				79892BA72B566D1700904F52 /* Beer.storyboard in Resources */,
 				79892BB62B56848900904F52 /* BeerTableViewCell.xib in Resources */,
 				79892B942B5663FA00904F52 /* LaunchScreen.storyboard in Resources */,
@@ -207,11 +250,16 @@
 				79892BB22B56833400904F52 /* BeerListViewController.swift in Sources */,
 				79892B8C2B5663F800904F52 /* ViewController.swift in Sources */,
 				79892B9E2B5668EF00904F52 /* Lotto.swift in Sources */,
+				79892BCC2B57CDD400904F52 /* LanguageViewController.swift in Sources */,
 				79892B9C2B5665F400904F52 /* LottoViewController.swift in Sources */,
 				79892B882B5663F800904F52 /* AppDelegate.swift in Sources */,
 				79892B8A2B5663F800904F52 /* SceneDelegate.swift in Sources */,
 				79892BA92B566D1D00904F52 /* Beer.swift in Sources */,
 				79892BA02B56690F00904F52 /* LottoAPIManager.swift in Sources */,
+				79892BCA2B57CAA700904F52 /* Identifier.swift in Sources */,
+				79892BC72B57CA4100904F52 /* TranslateViewController.swift in Sources */,
+				79892BCE2B57D8FC00904F52 /* LanguageTableViewCell.swift in Sources */,
+				79892BC12B57C8E900904F52 /* APIKey.swift in Sources */,
 				79892BB52B56848900904F52 /* BeerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
