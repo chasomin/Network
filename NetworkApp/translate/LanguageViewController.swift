@@ -32,7 +32,6 @@ extension LanguageViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: LanguageTableViewCell.id, for: indexPath) as! LanguageTableViewCell
         let key: [String] = Array(Language.language.keys)
         cell.languageLabel.text = Language.language[key[indexPath.row]]
-        print(key)
         return cell
     }
     

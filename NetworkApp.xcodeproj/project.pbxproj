@@ -32,6 +32,7 @@
 		79892BCA2B57CAA700904F52 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BC92B57CAA700904F52 /* Identifier.swift */; };
 		79892BCC2B57CDD400904F52 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BCB2B57CDD400904F52 /* LanguageViewController.swift */; };
 		79892BCE2B57D8FC00904F52 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BCD2B57D8FC00904F52 /* LanguageTableViewCell.swift */; };
+		79892BD02B57E51A00904F52 /* TranslateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BCF2B57E51A00904F52 /* TranslateData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		79892BC92B57CAA700904F52 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		79892BCB2B57CDD400904F52 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		79892BCD2B57D8FC00904F52 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
+		79892BCF2B57E51A00904F52 /* TranslateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		79892BC22B57C96700904F52 /* translate */ = {
 			isa = PBXGroup;
 			children = (
+				79892BCF2B57E51A00904F52 /* TranslateData.swift */,
 				79892BC42B57CA1F00904F52 /* Translate.storyboard */,
 				79892BC62B57CA4100904F52 /* TranslateViewController.swift */,
 				79892BCB2B57CDD400904F52 /* LanguageViewController.swift */,
@@ -253,6 +256,7 @@
 				79892BCC2B57CDD400904F52 /* LanguageViewController.swift in Sources */,
 				79892B9C2B5665F400904F52 /* LottoViewController.swift in Sources */,
 				79892B882B5663F800904F52 /* AppDelegate.swift in Sources */,
+				79892BD02B57E51A00904F52 /* TranslateData.swift in Sources */,
 				79892B8A2B5663F800904F52 /* SceneDelegate.swift in Sources */,
 				79892BA92B566D1D00904F52 /* Beer.swift in Sources */,
 				79892BA02B56690F00904F52 /* LottoAPIManager.swift in Sources */,
