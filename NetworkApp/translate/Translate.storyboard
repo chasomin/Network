@@ -104,33 +104,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iyE-5a-wTB">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LanguageTableViewCell" rowHeight="103" id="mQz-XL-R5m" customClass="LanguageTableViewCell" customModule="NetworkApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="103"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mQz-XL-R5m" id="vMG-RZ-hz3">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="103"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKc-bB-kNz">
-                                                    <rect key="frame" x="25.000000000000004" y="16" width="41.333333333333343" height="71"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="VKc-bB-kNz" firstAttribute="top" secondItem="vMG-RZ-hz3" secondAttribute="topMargin" constant="5" id="G0O-cm-7OV"/>
-                                                <constraint firstItem="VKc-bB-kNz" firstAttribute="leading" secondItem="vMG-RZ-hz3" secondAttribute="leadingMargin" constant="5" id="Ma7-Ud-D5t"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="VKc-bB-kNz" secondAttribute="trailing" constant="5" id="NB5-id-iwM"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="VKc-bB-kNz" secondAttribute="bottom" constant="5" id="Vgb-AG-u4z"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="languageLabel" destination="VKc-bB-kNz" id="0qC-Dt-Kse"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DUv-8s-PsZ"/>

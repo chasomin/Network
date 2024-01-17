@@ -6,10 +6,11 @@
 //
 
 import UIKit
-import Alamofire
 
 class TranslateViewController: UIViewController {
-
+    let manager = TranslateAPIManager()
+    
+    
     @IBOutlet var sourceLanguageButton: UIButton!
     @IBOutlet var targetLanguageButton: UIButton!
     @IBOutlet var changeButton: UIButton!
@@ -33,40 +34,27 @@ class TranslateViewController: UIViewController {
     }
     
     @objc func translateButtonTapped() {
-        let url = "https://openapi.naver.com/v1/papago/n2mt"
-        
-        let parameters: Parameters = ["source":"ko",
-                                      "target":"en",
-                                      "text":textView.text!]
-        
-        let headers:HTTPHeaders = ["X-Naver-Client-Id":APIKey.naverClientID,
-                                   "X-Naver-Client-Secret":APIKey.naberClientSecret]
-        
-        AF.request(url,
-                   method: .post,
-                   parameters: parameters,
-                   headers: headers)
-            .responseDecodable(of: Papago.self) { response in
-                switch response.result {
-                case .success(let success):
-                    dump(success)
-                    self.resultLabel.text = success.message.result.translatedText
-                case .failure(let failure):
-                    print(failure)
-                }
-            }
+        manager.allRequest(text: textView.text!) { data in
+            self.resultLabel.text = data.message.result.translatedText
+        }
+        view.endEditing(true)
+
     }
 
     
     @objc func sourceLanguageButtonTapped() {
         let vc = storyboard?.instantiateViewController(withIdentifier: LanguageViewController.id) as! LanguageViewController
         
+        vc.source = "ko"
+        vc.target = ""
+        
         navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func targetLanguageButtonTapped() {
         let vc = storyboard?.instantiateViewController(withIdentifier: LanguageViewController.id) as! LanguageViewController
-        
+        vc.target = "en"
+        vc.source = ""
         navigationController?.pushViewController(vc, animated: true)
 
     }

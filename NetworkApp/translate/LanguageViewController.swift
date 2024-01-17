@@ -8,6 +8,8 @@
 import UIKit
 
 class LanguageViewController: UIViewController {
+    var source = ""
+    var target = ""
 
     @IBOutlet var tableView: UITableView!
     
@@ -15,6 +17,11 @@ class LanguageViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.rowHeight = UITableView.automaticDimension
+
+        let xib = UINib(nibName: LanguageTableViewCell.id, bundle: nil)
+        tableView.register(xib, forCellReuseIdentifier: LanguageTableViewCell.id)
 
     }
     
@@ -32,6 +39,9 @@ extension LanguageViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: LanguageTableViewCell.id, for: indexPath) as! LanguageTableViewCell
         let key: [String] = Array(Language.language.keys)
         cell.languageLabel.text = Language.language[key[indexPath.row]]
+        if source == key[indexPath.row] || target == key[indexPath.row] {
+            cell.languageLabel.textColor = .systemBlue
+        }
         return cell
     }
     
