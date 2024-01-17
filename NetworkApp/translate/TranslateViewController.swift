@@ -9,7 +9,7 @@ import UIKit
 
 class TranslateViewController: UIViewController {
     let manager = TranslateAPIManager()
-    
+    var recentText = ""
     
     @IBOutlet var sourceLanguageButton: UIButton!
     @IBOutlet var targetLanguageButton: UIButton!
@@ -32,13 +32,16 @@ class TranslateViewController: UIViewController {
         targetLanguageButton.addTarget(self, action: #selector(targetLanguageButtonTapped), for: .touchUpInside)
         
     }
-    
+    // TODO: 텍스트뷰 내용이 너무 짧으면 요청 x
     @objc func translateButtonTapped() {
-        manager.allRequest(text: textView.text!) { data in
-            self.resultLabel.text = data.message.result.translatedText
+        if recentText != textView.text! {
+            translateButton.isEnabled = true
+            manager.allRequest(text: textView.text!, source: "ko", target: "en") { data in
+                self.resultLabel.text = data.message.result.translatedText
+            }
         }
         view.endEditing(true)
-
+        recentText = textView.text!
     }
 
     

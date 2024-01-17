@@ -9,11 +9,11 @@ import Foundation
 import Alamofire
 
 struct TranslateAPIManager {
-    func allRequest(text: String, completionHandler: @escaping (Papago) -> Void) {
+    func allRequest(text: String, source: String, target: String, completionHandler: @escaping (Papago) -> Void) {
         let url = "https://openapi.naver.com/v1/papago/n2mt"
         
-        let parameters: Parameters = ["source":"ko",
-                                      "target":"en",
+        let parameters: Parameters = ["source":source,
+                                      "target":target,
                                       "text":text]
         
         let headers:HTTPHeaders = ["X-Naver-Client-Id":APIKey.naverClientID,
