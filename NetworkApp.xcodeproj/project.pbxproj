@@ -25,6 +25,7 @@
 		79892BB22B56833400904F52 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BB12B56833400904F52 /* BeerListViewController.swift */; };
 		79892BB52B56848900904F52 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79892BB32B56848900904F52 /* BeerTableViewCell.swift */; };
 		79892BB62B56848900904F52 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79892BB42B56848900904F52 /* BeerTableViewCell.xib */; };
+		79892BBF2B57C89A00904F52 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 79892BBE2B57C89A00904F52 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		79892BB12B56833400904F52 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		79892BB32B56848900904F52 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		79892BB42B56848900904F52 /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
+		79892BBE2B57C89A00904F52 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		79892B7B2B5663F800904F52 = {
 			isa = PBXGroup;
 			children = (
+				79892BBE2B57C89A00904F52 /* .gitignore */,
 				79892B862B5663F800904F52 /* NetworkApp */,
 				79892B852B5663F800904F52 /* Products */,
 			);
@@ -187,6 +190,7 @@
 				79892BB62B56848900904F52 /* BeerTableViewCell.xib in Resources */,
 				79892B942B5663FA00904F52 /* LaunchScreen.storyboard in Resources */,
 				79892B912B5663FA00904F52 /* Assets.xcassets in Resources */,
+				79892BBF2B57C89A00904F52 /* .gitignore in Resources */,
 				79892B8F2B5663F800904F52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
